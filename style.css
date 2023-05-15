@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+.container{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    width: 450px;
+    height: 600px;
+    background-color: white;
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.body-plan{
+    display: flex;
+    background-color:hsl(225, 100%, 98%);
+  justify-content: space-between;
+  align-items: center;
+  width:350px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left:50px;
+  margin-bottom: 20px;
+}
+.annual-paragraph{
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+}
+.annual-paragraph-2{
+  color:hsla(223, 47%, 23%, 0.811);  
+}
+
+.spans{
+    display: column;
+      margin-left:-90px; 
+}
+body{
+    background-image:url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:hsl(225, 100%, 98%);
+}
+.body-paragraph{
+    color:hsl(223, 47%, 23%);
+    padding:20px;
+    font-weight:400;
+    font-size:14px;
+    text-align: center;
+    line-height: 1.2em;
+}
+.change{
+    color:  hsl(245, 100%, 49%);
+    font-weight: 700;
+}
+.change:hover{
+    color:hsl(224, 23%, 55%);
+}
+.attribution{
+    position: absolute;
+    top:120%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.big-heading{
+    padding:20px;
+    text-align: center;
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+}
+.button-proceed:hover{
+    background-color: hsl(224, 23%, 55%);;
+}
+.button-proceed{
+    padding:10px;
+    width:70%;
+    border-radius:10px;
+    border-color: none;
+    background-color:hsl(245, 75%, 52%) ;
+    color:white;
+    font-weight: 700;
+    border:none;
+    margin-left:60px;
+}
+.cancel:hover{
+  color:hsl(245, 100%, 49%);  
+}
+.cancel{
+color:hsl(224, 23%, 55%);
+text-decoration: none;
+font-weight: 700;
+margin:20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*----- MEDIA QUERIES-----*/
+@media (max-width:600px) {
+    body{
+      background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:hsl(225, 100%, 98%);  
+    }
+.container{
+    width: 375px;
+    height: 600px;
+    background-color: white;
+}
+ .body-plan{
+      width:300px;
+ }
+ .spans{
+    width: 20px;
+ }
+ .annual-paragraph{
+    white-space: nowrap;
+
+ }
+}
